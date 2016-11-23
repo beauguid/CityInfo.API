@@ -16,7 +16,7 @@ namespace CityInfo.API
                 .UseContentRoot(Directory.GetCurrentDirectory()) //specifies the main folder for the app's content
                 .UseIISIntegration()  
                 .UseStartup<Startup>() 
-                .Build();
+                .Build(); //Testing
 
             host.Run(); //runs web application
         }
