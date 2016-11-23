@@ -11,14 +11,14 @@ namespace CityInfo.API
     {
         public static void Main(string[] args)
         {
-            var host = new WebHostBuilder()
-                .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
-                .UseStartup<Startup>()
+            var host = new WebHostBuilder() //instance to run a web host
+                .UseKestrel() //decoupled cross-platform web server
+                .UseContentRoot(Directory.GetCurrentDirectory()) //specifies the main folder for the app's content
+                .UseIISIntegration()  
+                .UseStartup<Startup>() 
                 .Build();
 
-            host.Run();
+            host.Run(); //runs web application
         }
     }
 }
