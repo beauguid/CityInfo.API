@@ -171,4 +171,6 @@ C:\Users\guidryb\Documents\Visual Studio 2015\Projects\CityInfo.API\src\CityInfo
 C:\Users\guidryb\Documents\Visual Studio 2015\Projects\CityInfo.API\src\CityInfo.API\Program.cs
 C:\Users\guidryb\Documents\Visual Studio 2015\Projects\CityInfo.API\src\CityInfo.API\Startup.cs
 C:\Users\guidryb\Documents\Visual Studio 2015\Projects\CityInfo.API\src\CityInfo.API\Controllers\CitiesController.cs
+C:\Users\guidryb\Documents\Visual Studio 2015\Projects\CityInfo.API\src\CityInfo.API\Controllers\PointsOfInterestController.cs
 C:\Users\guidryb\Documents\Visual Studio 2015\Projects\CityInfo.API\src\CityInfo.API\Models\CityDto.cs
+C:\Users\guidryb\Documents\Visual Studio 2015\Projects\CityInfo.API\src\CityInfo.API\Models\PointOfInterestDto.cs
