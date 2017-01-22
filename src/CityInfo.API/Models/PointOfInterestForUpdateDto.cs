@@ -12,7 +12,6 @@ namespace CityInfo.API.Models
         [Required(ErrorMessage = "Name is required!")]
         [MaxLength(50,ErrorMessage = "Name must be less than 50 characters in length!")]
         public string Name { get; set; }
-        [Required]
         [MaxLength(200)]
         public string Description { get; set; }
     }
