@@ -40,18 +40,18 @@ namespace CityInfo.API.Controllers
         [HttpPost("{cityId}/pointsofinterest")]
         public IActionResult CreatePointOfInterest(int cityId, [FromBody] PointOfInterestForCreationDto pointOfInterest)
         {
-            if(pointOfInterest == null)
+
+            if (pointOfInterest.Name == pointOfInterest.Description)
+            {
+                ModelState.AddModelError("Description", "Description must be different than the name!");
+            }
+            if (pointOfInterest == null)
             {
                 return BadRequest();
             }
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
-            }
-
-            if(pointOfInterest.Name == pointOfInterest.Description)
-            {
-                ModelState.AddModelError("Description","Description must be different than the name!");
             }
 
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
